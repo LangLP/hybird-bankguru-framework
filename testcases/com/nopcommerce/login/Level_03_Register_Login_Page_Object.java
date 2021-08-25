@@ -31,7 +31,7 @@ public class Level_03_Register_Login_Page_Object {
 		driver.manage().window().maximize();
 
 		emailAddress=getRandomEmail();
-		password="123456";
+		password="1234567";
 	}
 
 	@Test
