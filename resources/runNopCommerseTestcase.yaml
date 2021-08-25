@@ -1,0 +1,7 @@
+name: Nop Commerce
+configFailurePolicy: skip
+tests:
+  - name: Run on FILEFOX
+    classes:
+      -  com.nopcommerce.login.Level_03_Register_Login_Page_Object
+

@@ -2,7 +2,7 @@
 <suite parallel="false" name="Bank Guru">
   <test name="Run on FILEFOX">
     <classes>
-      <class name="com.bankguru.user.User_01_New_Custemer"/>
+      <class name="com.nopcommerce.login.Level_03_Register_Login_Page_Object"/>
     </classes>
   </test> 
 </suite> 
