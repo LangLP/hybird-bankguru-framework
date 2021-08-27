@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="Nop Commerce">
-  <test name="Run on FILEFOX">
-    <classes>
-      <class name="com.nopcommerce.login.Level_03_Register_Login_Page_Object"/>
-    </classes>
-  </test> 
-</suite> 

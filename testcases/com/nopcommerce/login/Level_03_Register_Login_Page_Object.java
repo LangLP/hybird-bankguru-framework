@@ -10,9 +10,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pageObjectnopCommerce.HomePageObject;
-import pageObjectnopCommerce.LoginPageObject;
-import pageObjectnopCommerce.RegisterPageObject;
+import pageObject.nopCommerce.HomePageObject;
+import pageObject.nopCommerce.LoginPageObject;
+import pageObject.nopCommerce.RegisterPageObject;
 
 public class Level_03_Register_Login_Page_Object {
 
