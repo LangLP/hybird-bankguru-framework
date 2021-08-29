@@ -2,7 +2,6 @@ package com.bankguru.login;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -24,7 +23,6 @@ public class Level_03_Register_Login_Base_Page_1 extends BasePage{
 		System.out.println(projectPath);
 		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
 		driver = new FirefoxDriver();
-
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("http://demo.guru99.com/v4/");
@@ -33,9 +31,7 @@ public class Level_03_Register_Login_Base_Page_1 extends BasePage{
 
 	@Test
 	public void Login_01_Register_To_System() {
-		
 		loginPageUrl = getPageUrl(driver);
-		
 		clickToElement(driver,"//a[text()='here']");
 		sendkeyToElement(driver,"//input[@name='emailid']",getRandomEmail());
 		clickToElement(driver,"//input[@name='btnLogin']");
@@ -45,10 +41,7 @@ public class Level_03_Register_Login_Base_Page_1 extends BasePage{
 	}
 	@Test
 	public void Login_02_Login_To_System() {
-		
 		openPageUrl(driver,loginPageUrl);
-
-		
 		sendkeyToElement(driver,"//input[@name='uid']",username);
 		sendkeyToElement(driver,"//input[@name='password']",password);
 		clickToElement(driver,"//input[@name='btnLogin']");

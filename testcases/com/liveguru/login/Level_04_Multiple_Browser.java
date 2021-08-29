@@ -8,7 +8,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import commons.BaseTest;
 import pageObject.liveGuru.HomePageObject;
 import pageObject.liveGuru.LoginPageObject;
@@ -70,11 +69,9 @@ public class Level_04_Multiple_Browser extends BaseTest {
 	@Test(description = "Email not  exist in system")
 	public void Login_04_Login_Incorrect_Email() {
 		loginPage.refreshCurrentPage(driver);
-
 		loginPage.enterToPasswordTextbox(getRandomEmail());
 		loginPage.enterToEmailTextbox("123456");
 		loginPage.clickToLoginButton();
-
 		Assert.assertEquals(loginPage.getInvalidEmailOrPasswordErrorMessage(), "Invalid login or password.");
 
 	}
@@ -82,11 +79,9 @@ public class Level_04_Multiple_Browser extends BaseTest {
 	@Test
 	public void Login_05_Login_Incorrect_Password() {
 		loginPage.refreshCurrentPage(driver);
-
 		loginPage.enterToPasswordTextbox("dam@gmail.com");
 		loginPage.enterToEmailTextbox("111222");
 		loginPage.clickToLoginButton();
-
 		Assert.assertEquals(loginPage.getInvalidEmailOrPasswordErrorMessage(), "Invalid login or password.");
 
 	}
@@ -94,11 +89,9 @@ public class Level_04_Multiple_Browser extends BaseTest {
 	@Test
 	public void Login_06_Vaild_Email_And_Password() {
 		loginPage.refreshCurrentPage(driver);
-
 		loginPage.enterToPasswordTextbox("dam@gmail.com");
 		loginPage.enterToEmailTextbox("123123");
 		loginPage.clickToLoginButton();
-
 		myDasboardPage = new MyDasboardPageObject(driver);
 		Assert.assertTrue(myDasboardPage.isMyDashboardHeaderDisplayed());
 
